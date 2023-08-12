@@ -1,0 +1,31 @@
+"""
+Definition :
+The formal definition of Big O notation is as follows:
+
+In computer science, the Big O notation describes the upper bound of the growth rate of an algorithm's time or space complexity in relation to the size of its input. For a given function f(n), denoting the input size, an algorithm's time complexity is said to be O(g(n)) if there exist positive constants c and n₀ such that the algorithm's performance does not exceed c * g(n) for all input sizes n greater than or equal to n₀.
+
+In simpler terms, Big O notation provides an upper limit on how an algorithm's efficiency changes as the input size increases. It helps categorize algorithms based on their growth rates, allowing comparisons to determine which algorithms are more suitable for handling larger datasets.
+
+Big O notation is a way to describe the upper bound or limiting behavior of an algorithm's time or space complexity in relation to the size of its input. It helps us understand how an algorithm's performance scales as the input gets larger.
+
+Think of Big O notation as a kind of "quick summary" that tells us how fast an algorithm grows in terms of time or space usage. It focuses on the most significant factors that affect an algorithm's efficiency, ignoring smaller details and constants.
+
+Here's how Big O notation works:
+
+Simplification: When analyzing an algorithm's efficiency, we're often interested in the general trend rather than exact numbers. Big O notation simplifies this by focusing on the most significant term that contributes to the growth rate as the input size increases.
+
+Upper Bound: Big O notation gives an upper limit on how an algorithm's performance will grow. It tells us that an algorithm will never be worse than a certain rate of growth.
+
+Examples:
+
+O(1): Constant time complexity. No matter how big the input is, the algorithm takes the same amount of time.
+O(n): Linear time complexity. The time taken grows directly proportional to the input size.
+O(n^2): Quadratic time complexity. The time taken grows proportional to the square of the input size.
+O(log n): Logarithmic time complexity. The time taken grows, but at a slower rate as the input size increases.
+O(n log n): Linearithmic time complexity. Common in efficient sorting algorithms like Merge Sort and Heap Sort.
+O(2^n): Exponential time complexity. The time taken doubles as each new element is added to the input.
+And so on...
+Remember that the goal of Big O notation is to help us compare algorithms in terms of their efficiency as the input size increases. It doesn't give us exact timings; instead, it provides a high-level understanding of how different algorithms perform relative to each other.
+
+In practical terms, when you see an algorithm's time complexity expressed in Big O notation, you're looking at how that algorithm's performance scales when dealing with larger datasets. The lower the order of growth, the more efficient the algorithm is for larger inputs.
+"""

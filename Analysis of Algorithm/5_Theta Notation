@@ -1,0 +1,15 @@
+Theta notation, denoted as Θ(n), is another important concept in computer science that describes both the upper and lower bounds of an algorithm's growth rate in relation to the size of its input. It provides a more precise understanding of how an algorithm's performance behaves, giving a range within which the algorithm's efficiency falls.
+
+Here's a detailed explanation of Theta notation:
+
+1. **Definition:** Theta notation Θ(g(n)) represents a tight bound on the growth rate of a function. For an algorithm with input size n, the algorithm's time complexity is said to be Θ(g(n)) if there exist positive constants c₁, c₂, and n₀ such that the algorithm's performance falls between c₁ * g(n) and c₂ * g(n) for all input sizes n greater than or equal to n₀.
+
+2. **Balanced Analysis:** Theta notation provides a balanced view by considering both upper and lower bounds. It captures the actual growth rate of an algorithm within a defined range, which makes it especially useful for understanding an algorithm's behavior more precisely.
+
+3. **Comparing Algorithms:** When analyzing an algorithm's efficiency using Theta notation, we're essentially saying that the algorithm's performance is neither better nor worse than a specific growth rate. This allows us to compare different algorithms based on a more comprehensive understanding of their efficiency.
+
+4. **Example:** Let's consider a sorting algorithm that has both a best-case scenario and a worst-case scenario. If the time complexity of this algorithm is Θ(n log n), it means that its performance consistently falls within the range of c₁ * n log n and c₂ * n log n for all input sizes. This notation captures the algorithm's behavior more accurately than just using Big O or Omega alone.
+
+5. **Interplay with Big O and Omega:** Theta notation gives us a complete picture of an algorithm's growth rate by considering both its upper and lower bounds. If an algorithm's best-case and worst-case complexities are both Θ(n^2), it suggests that the algorithm's performance is consistently quadratic, regardless of the input distribution.
+
+In summary, Theta notation strikes a balance between Big O and Omega notations by providing a more accurate range for an algorithm's growth rate. It's a powerful tool for comparing algorithms in terms of their efficiency and understanding their behavior across different scenarios.
